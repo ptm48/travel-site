@@ -31,14 +31,6 @@
         text-indent: -9999px;
     }
 
-    &__menu-content {
-        display: none;
-
-        @mixin atMedium {
-            display: block;
-        }
-    }
-
     &__menu-icon {
         width: 20px;
         height: 20px;
@@ -46,9 +38,22 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        display: block;
+
+        @mixin atMedium {
+            display: none;
+        }
     }
 
-    @mixin atMedium {
-        display: block;
+    &__menu-content {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+
+        &--is-visible {
+            display: block;
+        }
     }
 }
