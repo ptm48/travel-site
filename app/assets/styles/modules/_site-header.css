@@ -49,6 +49,6 @@
     }
 
     @mixin atMedium {
-        display: none;
+        display: block;
     }
 }
